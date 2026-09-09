@@ -33,17 +33,3 @@ export function NavigationOffer({
     </button>
   );
 }
-
-export function ValidatorWarningBanner({
-  validatorStatus,
-}: {
-  validatorStatus: 'clean' | 'repaired' | 'flagged';
-}) {
-  if (validatorStatus !== 'flagged') return null;
-
-  return (
-    <div className="warning-banner">
-      This answer may contain unverified figures.
-    </div>
-  );
-}
